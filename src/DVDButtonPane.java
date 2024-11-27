@@ -5,6 +5,7 @@ import javafx.scene.layout.Pane;
 public class DVDButtonPane extends Pane {
     private Button addButton;
     private Button deleteButton;
+    private Button statsButton;
 
     public DVDButtonPane (){
         Pane buttonPane = new Pane();
@@ -21,7 +22,7 @@ public class DVDButtonPane extends Pane {
         deleteButton.relocate(100, 0);
         deleteButton.setStyle("-fx-font: 12 arial; -fx-base: rgb(100,0,0); " + "-fx-text-fill: rgb(255,255,255);");
 
-        Button statsButton = new Button("Stats");
+        statsButton = new Button("Stats");
         statsButton.setStyle("-fx-font: 12 arial; -fx-base: rgb(255,255,255); " + "-fx-text-fill: rgb(0,0,0);");
         statsButton.setPrefSize(90,30);
         statsButton.relocate(210,0);
